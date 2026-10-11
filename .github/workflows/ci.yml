@@ -1,0 +1,43 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    name: Lint & sanity
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ruff
+        run: pip install ruff
+
+      - name: Lint source (skipped until source release lands)
+        run: |
+          if compgen -G "src/*.py" > /dev/null || compgen -G "experiments/**/*.py" > /dev/null; then
+            ruff check src experiments
+          else
+            echo "No source files yet — skipping lint. (Source release is planned after publication.)"
+          fi
+
+      - name: Check repository key files exist
+        run: |
+          set -e
+          for f in README.md README_zh.md LICENSE CITATION.cff assets/banner.svg \
+                   docs/README.md paper/README.md; do
+            test -f "$f" || { echo "Missing: $f"; exit 1; }
+          done
+          echo "All key files present."

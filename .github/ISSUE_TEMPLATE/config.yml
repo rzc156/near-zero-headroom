@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/rzc156/near-zero-headroom/discussions
+    about: Ask questions about this project.
+  - name: 🤝 Contributing guide
+    url: https://github.com/rzc156/near-zero-headroom/blob/main/CONTRIBUTING.md
+    about: How to contribute — and what will be released after publication.

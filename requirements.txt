@@ -1,0 +1,41 @@
+# Reference environment for this project (tested on a single 16 GB NVIDIA GPU)
+#
+# Policy side: torch, lerobot, transformers, diffusers, ...
+# Method side: torch + numpy only.
+#
+# NOTE: for Blackwell-generation GPUs (sm_120) install torch with a CUDA 12.8+ build, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu130
+
+# --- Core ---
+numpy
+scipy
+torch>=2.7          # tested with 2.11 (cu130)
+torchvision
+
+# --- Robot learning / VLA ---
+lerobot==0.6.1
+transformers>=5.0,<5.6
+diffusers
+accelerate
+datasets
+timm
+peft
+safetensors
+
+# --- Simulation / benchmark ---
+mujoco>=3.4
+robosuite
+
+# --- RL / evaluation harness ---
+gymnasium
+einops
+
+# --- Tooling ---
+hydra-core
+omegaconf
+wandb
+tqdm
+opencv-python
+h5py
+matplotlib
+pyyaml

@@ -1,0 +1,36 @@
+name: Feature / idea
+description: Propose an improvement, a new experiment, or a future replication
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the proposal! Note that the code, experiment drivers and
+        results will be released after the manuscript is accepted.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: What do you want to do and why?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / related work
+      description: Links, papers, or prior issues.
+    validations:
+      required: false
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options:
+        - Replication (planned, after release)
+        - Improvement of released methods
+        - Documentation
+        - Performance / tooling
+        - Other
+    validations:
+      required: true

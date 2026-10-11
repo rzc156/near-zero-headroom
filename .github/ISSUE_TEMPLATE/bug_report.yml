@@ -1,0 +1,45 @@
+name: Bug report
+description: Report something that does not work as documented
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filing a bug! Please include the exact command and environment.
+        Note: the code and results will be released after publication; until then
+        this tracker is mainly for repository/docs issues.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear and concise description of the bug, with the exact command.
+      placeholder: |
+        Command: python src/...
+        Observed: ...
+        Expected: ...
+    validations:
+      required: true
+  - type: input
+    id: commit
+    attributes:
+      label: Commit / version
+      placeholder: e.g. main@abcdef1 or v0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, GPU, torch/CUDA, conda env, relevant package versions.
+      placeholder: |
+        Ubuntu 24.04, RTX 5080 16GB, torch 2.11+cu130, lerobot 0.6.1, MUJOCO_GL=egl
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / traceback
+      render: shell
+    validations:
+      required: false

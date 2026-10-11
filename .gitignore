@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.conda/
+
+# Data, caches, datasets
+data/
+datasets/
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Model checkpoints / weights (large)
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+checkpoints/
+models/
+
+# Experiment outputs / logs
+wandb/
+outputs/
+runs/
+*.log
+logs/
+
+# Hugging Face cache
+.cache/
+hf_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

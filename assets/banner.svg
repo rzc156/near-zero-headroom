@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-label="VLA Test-Time Action Selection">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0F1C"/>
+      <stop offset="55%" stop-color="#0E1730"/>
+      <stop offset="100%" stop-color="#16213C"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.15" r="0.9">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12"/>
+      <stop offset="45%" stop-color="#38BDF8" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#FFFFFF" opacity="0.055"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="1280" height="360" rx="18" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1280" height="360" rx="18" fill="url(#dots)"/>
+  <rect x="0" y="0" width="1280" height="360" rx="18" fill="url(#glow)"/>
+  <rect x="0.75" y="0.75" width="1278.5" height="358.5" rx="17.25" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1.5"/>
+
+  <!-- eyebrow -->
+  <text x="64" y="66" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="3.2" fill="#38BDF8">EMBODIED AI · VISION-LANGUAGE-ACTION · ROBOT LEARNING</text>
+
+  <!-- chips (right) -->
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#CBD5E1">
+    <rect x="955" y="42" width="82" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
+    <text x="996" y="62" text-anchor="middle">LIBERO</text>
+    <rect x="1045" y="42" width="80" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
+    <text x="1085" y="62" text-anchor="middle">PyTorch</text>
+    <rect x="1133" y="42" width="83" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
+    <text x="1174.5" y="62" text-anchor="middle">16GB GPU</text>
+  </g>
+
+  <!-- title -->
+  <text x="64" y="172" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="46" font-weight="700" fill="#F8FAFC">VLA Test-Time Action Selection</text>
+  <text x="64" y="214" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="18" fill="#94A3B8">A research project on candidate action selection for vision-language-action policies</text>
+
+  <!-- candidates motif: K dots, one highlighted -->
+  <g>
+    <circle cx="76" cy="288" r="9" fill="none" stroke="#475569" stroke-width="2"/>
+    <circle cx="116" cy="288" r="9" fill="none" stroke="#475569" stroke-width="2"/>
+    <circle cx="156" cy="288" r="9" fill="none" stroke="#475569" stroke-width="2"/>
+    <circle cx="196" cy="288" r="9" fill="#38BDF8"/>
+    <text x="226" y="294" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#64748B">sampling K candidates, picking one to execute</text>
+  </g>
+
+  <!-- footer -->
+  <text x="1216" y="294" text-anchor="end" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14" fill="#64748B">manuscript under review · code, results &amp; paper to follow</text>
+</svg>

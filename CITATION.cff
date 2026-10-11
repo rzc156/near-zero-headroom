@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it. Full citation details will be added once the manuscript is published."
+title: "VLA test-time action selection (research project)"
+type: software
+authors:
+  # TODO: update with your preferred name before publication.
+  - name: "rzc156"
+version: 0.1.0
+date-released: "2026-10-12"
+repository-code: "https://github.com/rzc156/near-zero-headroom"
+url: "https://github.com/rzc156/near-zero-headroom"
+license: MIT
+keywords:
+  - vision-language-action
+  - embodied-ai
+  - robot-learning
+  - libero
