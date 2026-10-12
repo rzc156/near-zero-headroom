@@ -31,9 +31,9 @@ body:
     id: environment
     attributes:
       label: Environment
-      description: OS, GPU, torch/CUDA, conda env, relevant package versions.
+      description: OS, torch/CUDA, conda env, relevant package versions.
       placeholder: |
-        Ubuntu 24.04, NVIDIA GPU, torch 2.11+cu128, lerobot 0.6.1, MUJOCO_GL=egl
+        Ubuntu 24.04, torch 2.11+cu128, lerobot 0.6.1, MUJOCO_GL=egl
     validations:
       required: true
   - type: textarea
