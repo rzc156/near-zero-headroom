@@ -24,8 +24,7 @@ This repository hosts a research project on **test-time action selection for
 vision-language-action (VLA) policies**. A flow-matching / diffusion decoder can
 sample several candidate action chunks for the same observation; this project
 studies how a policy should pick the one to execute, evaluated with open VLA
-policies on the [LIBERO](https://libero-project.github.io/) benchmark on a
-single consumer GPU.
+policies on the [LIBERO](https://libero-project.github.io/) benchmark.
 
 > ### 📄 Manuscript under review
 >
@@ -62,8 +61,8 @@ near-zero-headroom/
 ## Environment (reference)
 
 Python 3.12 · PyTorch · [LeRobot](https://github.com/huggingface/lerobot) ·
-[LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) · a single NVIDIA GPU
-(16 GB). See [`requirements.txt`](requirements.txt) for the reference package set.
+[LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO). See
+[`requirements.txt`](requirements.txt) for the reference package set.
 
 ## Citation
 

@@ -1,10 +1,10 @@
-# Reference environment for this project (tested on a single 16 GB NVIDIA GPU)
+# Reference environment for this project
 #
 # Policy side: torch, lerobot, transformers, diffusers, ...
 # Method side: torch + numpy only.
 #
-# NOTE: for Blackwell-generation GPUs (sm_120) install torch with a CUDA 12.8+ build, e.g.:
-#   pip install torch --index-url https://download.pytorch.org/whl/cu130
+# NOTE: install torch with a CUDA build matching your GPU, e.g.:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
 
 # --- Core ---
 numpy

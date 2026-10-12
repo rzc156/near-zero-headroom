@@ -23,8 +23,7 @@
 本仓库是一个研究项目的发布地址，研究**视觉-语言-动作（VLA）策略的测试时动作
 选择**：flow matching / diffusion 解码器可以为同一观测采样出多个候选动作块，
 本项目研究策略应当如何选择其中之一来执行，在
-[LIBERO](https://libero-project.github.io/) 基准上用开源 VLA 策略、单张消费级
-显卡完成评测。
+[LIBERO](https://libero-project.github.io/) 基准上用开源 VLA 策略完成评测。
 
 > ### 📄 论文审稿中
 >
@@ -61,8 +60,8 @@ near-zero-headroom/
 ## 参考环境
 
 Python 3.12 · PyTorch · [LeRobot](https://github.com/huggingface/lerobot) ·
-[LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO) · 单卡 NVIDIA GPU
-（16GB）。软件包见 [`requirements.txt`](requirements.txt)。
+[LIBERO](https://github.com/Lifelong-Robot-Learning/LIBERO)。软件包见
+[`requirements.txt`](requirements.txt)。
 
 ## 引用
 

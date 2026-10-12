@@ -26,12 +26,10 @@
 
   <!-- chips (right) -->
   <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" fill="#CBD5E1">
-    <rect x="955" y="42" width="82" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
-    <text x="996" y="62" text-anchor="middle">LIBERO</text>
-    <rect x="1045" y="42" width="80" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
-    <text x="1085" y="62" text-anchor="middle">PyTorch</text>
-    <rect x="1133" y="42" width="83" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
-    <text x="1174.5" y="62" text-anchor="middle">16GB GPU</text>
+    <rect x="1003" y="42" width="82" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
+    <text x="1044" y="62" text-anchor="middle">LIBERO</text>
+    <rect x="1093" y="42" width="80" height="30" rx="15" fill="#111A2E" stroke="#2B3A55" stroke-width="1"/>
+    <text x="1133" y="62" text-anchor="middle">PyTorch</text>
   </g>
 
   <!-- title -->
