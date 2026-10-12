@@ -1,5 +1,5 @@
 <div align="center">
-<img src="assets/banner.svg" alt="VLA Test-Time Action Selection" width="100%">
+<img src="assets/banner.svg?v=2" alt="VLA Test-Time Action Selection" width="100%">
 
 # VLA Test-Time Action Selection
 
