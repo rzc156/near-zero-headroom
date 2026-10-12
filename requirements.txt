@@ -3,7 +3,7 @@
 # Policy side: torch, lerobot, transformers, diffusers, ...
 # Method side: torch + numpy only.
 #
-# NOTE: install torch with a CUDA build matching your GPU, e.g.:
+# NOTE: install torch with a CUDA build matching your system, e.g.:
 #   pip install torch --index-url https://download.pytorch.org/whl/cu128
 
 # --- Core ---

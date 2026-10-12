@@ -7,7 +7,7 @@ env:  ## Create the reference conda environment
 	conda create -n embodied python=3.12 -y
 	@echo "Run: conda activate embodied && pip install -r requirements.txt"
 
-check:  ## Environment / GPU sanity check
+check:  ## Environment sanity check
 	python -c "import torch; print('torch', torch.__version__); print('cuda', torch.cuda.is_available()); print('gpu', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'none')"
 	@echo "For LIBERO: export MUJOCO_GL=egl SDL_VIDEODRIVER=dummy"
 
